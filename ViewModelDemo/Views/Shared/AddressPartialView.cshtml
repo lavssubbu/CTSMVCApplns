@@ -1,0 +1,44 @@
+﻿@model ViewModelDemo.ViewModel.EmployeeAddressVM
+
+<div class="container">
+    
+    <table class="table">
+        <tr>
+            <th>
+                <h2>Employee Details</h2>
+                @Html.DisplayNameFor(model => model.employee.EmpName)
+            </th>    
+   
+  
+            <th>
+                <h2>Address Details</h2>
+                @Html.DisplayNameFor(model => model.address.DoorNO)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.address.StName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.address.City)
+            </th>
+        </tr>
+            <tbody>
+        <td>
+                @Html.DisplayFor(model => model.employee.EmpName)
+        </td>
+            
+
+            <td>
+                @Html.DisplayFor(model => model.address.DoorNO)
+           </td>
+           
+            <td>
+                @Html.DisplayFor(model => model.address.StName)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(model => model.address.City)
+            </td>         
+        </tbody>        
+    </table>
+</div>
+

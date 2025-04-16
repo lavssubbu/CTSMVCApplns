@@ -1,0 +1,47 @@
+﻿@model ViewModelDemo.ViewModel.EmployeeAddressVM
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "_Layout";
+}
+
+
+<h1>Details</h1>
+
+<div>
+  <!--<h4>EmployeeAddressViewModel</h4>
+    <hr />
+    <h2>Basic Details</h2>
+    <div>
+        EmployeeId: @Model.employee.EmpId
+    </div>
+    <div>
+        EmployeeName: @Model.employee.EmpName
+    </div>
+    <div>
+       Department: @Model.employee.Dept
+    </div>
+    <div>
+        Salary: @Model.employee.Salary
+    </div>
+    <h2>Address Details</h2>
+    <div>
+        Address: @Model.address.DoorNO @Model.address.StName
+
+    </div>
+    <div>
+        City: @Model.address.City
+    </div>
+    <div>
+        State: @Model.address.State
+    </div>
+    <div>
+        Country: @Model.address.Country
+    </div>-->
+    <!--Calling Partial view by Html.Partial method-->
+    @Html.Partial("AddressPartialView")
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
